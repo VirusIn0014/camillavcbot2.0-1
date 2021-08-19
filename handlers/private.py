@@ -5,7 +5,7 @@ from config import BOT_NAME as bn
 from helpers.filters import other_filters2
 
 
-@@Client.on_message(other_filters2)
+@Client.on_message(other_filters2)
 async def start(_, message: Message):
     await message.reply_sticker("https://telegra.ph/file/c11a3f3f79491c10f01cd.jpg")
     await message.reply_text(
