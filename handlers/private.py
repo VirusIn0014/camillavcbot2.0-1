@@ -6,7 +6,8 @@ from helpers.filters import other_filters2
 
 
 @Client.on_message(other_filters2)
-async def start(_, message: Message)
+async def start(_, message: Message):
+    await message.reply_sticker("non")
     await message.reply_text(
         f"""**Hey, I'm {bn} 🎀
 ɪ ᴄᴀɴ ᴘʟᴀʏ ᴍᴜsɪᴄ ɪɴ ʏᴏᴜʀ  ɢʀᴏᴜᴩ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ. 
