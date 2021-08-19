@@ -5,8 +5,9 @@ from config import BOT_NAME as bn
 from helpers.filters import other_filters2
 
 
-@Client.on_message(other_filters2)
-async def pmPermit(client: USER, message: Message):
+@@Client.on_message(other_filters2)
+async def start(_, message: Message):
+    await message.reply_sticker("https://telegra.ph/file/c11a3f3f79491c10f01cd.jpg")
     await message.reply_text(
         f"""**Hey, I'm {bn} 🎀
 ɪ ᴄᴀɴ ᴘʟᴀʏ ᴍᴜsɪᴄ ɪɴ ʏᴏᴜʀ  ɢʀᴏᴜᴩ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ. 
